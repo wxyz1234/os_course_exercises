@@ -70,6 +70,8 @@ SETGATE(intr, 1,2,3,0);
 ```
 请问执行上述指令后， intr的值是多少？
 
+&emsp;&emsp;首先，unsigned只有32位，所以只有gd_off_15_0和gd_ss有效，通过带入sel和off，得到结果intr=0x20003；
+
 ### 课堂实践练习
 
 #### 练习一
